@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend разработчик Даниил Базоров</title>
+    <meta name="description" content="Разработка сайтов. 10+ проектов. Гарантия результата" />
+
+    <!-- Open Graph / Facebook --><!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://мойдомен.ру" />
+    <meta property="og:title" content="Frontend разработчик Даниил Базоров" />
+    <meta property="og:description" content="Разработка сайтов. 10+ проектов. Гарантия результата" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://мойдомен.ру" />
+    <meta property="twitter:title" content="Frontend разработчик Даниил Базоров" />
+    <meta property="twitter:description" content="Разработка сайтов. 10+ проектов. Гарантия результата" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
+    <!-- Favicon https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="menu" aria-label="Основное меню">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">Обо мне</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#works">работы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contact">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero" id="about">
+                <div class="container">
+                    <h1 class="hero__title">
+                        Даниил Базоров
+                    </h1>
+                    <picture>
+                        <source type="image/avif" srcset="img/avatar.avif" media="(max-width: 600px)">
+                        <source type="image/webp" srcset="img/avatar.webp" media="(max-width: 600px)">
+                        <source type="image/avif" srcset="img/photo.avif">
+                        <source type="image/webp" srcset="img/photo.webp">
+                        <img class="hero__photo" src="img/photo.png" width="1200" height="700"
+                            alt="Фото Даниила Базорова">
+                    </picture>
+                    <div class="hero__content">
+                        <div class="hero__description">
+                            <p class="hero__paragraph">
+                                Меня зовут Даниил, я начинающий фронтенд-разработчик. Последние полтора года я
+                                самостоятельно осваиваю веб-разработку — от вёрстки на HTML и CSS до скриптов на
+                                JavaScript, сборки проектов в Gulp и контроля версий через Git. Коммерческого опыта нет,
+                                но есть системный подход и дисциплина, которые позволили мне пройти этот путь. Готов
+                                вкладываться в свой рост, учиться у команды и приносить пользу с первых задач.
+                            </p>
+                        </div>
+
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://github.com/Daneskjold" target="_blank"
+                                    rel="noopener noreferrer" aria-label="профиль в github">[ GitHub ]</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+
+                <div class="container">
+
+                    <h2 class="services__heading">Мой технологический стэк:</h2>
+                    <ul class="services__cards">
+                        <li class="services-card">
+                            <h3 class="services-card__title services-card__title--uppercase">html/css</h3>
+                            <!-- <ul class="services-card__list">
+                                <li class="services-card__skill">scss</li>
+                            </ul> -->
+                        </li>
+                        <li class="services-card">
+                            <h3 class="services-card__title">JavaScript</h3>
+                            <!-- <ul class="services-card__list">
+                                <li class="services-card__skill">React</li>
+                                <li class="services-card__skill">Angular</li>
+                                <li class="services-card__skill">Vue</li>
+                            </ul> -->
+                        </li>
+                        <li class="services-card">
+                            <h3 class="services-card__title">Gulp/Git</h3>
+                            <!-- <ul class="services-card__list">
+                                <li class="services-card__skill">Node.js</li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="works" id="works">
+                <div class="container works__container">
+                    <h2 class="visually-hidden">Работы</h2>
+                    <div class="works__moving-text" aria-hidden="true">
+                        <div class="works__moving-group">
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="works__moving-group">
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="works__title">Работы</span>
+                            <span class="works__star">
+                                <svg class="works__icon-svg" aria-hidden="true" focusable="false" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <use href="icons/sprite.svg#star-icon"></use>
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+                    <ul class="works__list">
+                        <li class="works__item">
+                            <a class="work-card" href="dist_federation/index.html" target="_blank"
+                                rel="noopener noreferrer">
+                                <figure class="work-card__figure">
+                                    <picture class="work-card__picture">
+                                        <source type="image/avif" srcset="img/federation.avif">
+                                        <source type="image/webp" srcset="img/federation.webp">
+                                        <img class="work-card__img" width="600" height="600" src="img/federation.png"
+                                            alt="скриншот сайта федерации" loading="lazy">
+                                    </picture>
+                                    <figcaption class="work-card__caption">
+                                        <div class="work-card__title">
+                                            <h3 class="work-card__name">сайт-визитка</h3>
+                                        </div>
+                                        <p class="work-card__description">
+                                            Cайт-визитка для Федерации конькобежного спорта Тульской области. Адаптивная
+                                            вёрстка, плавные CSS-анимации ссылок и навигации, мобильное меню — всё
+                                            продумано для удобного взаимодействия на любом устройстве.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="works__item">
+                            <a class="work-card" href="dist_portfolio/index.html" target="_blank"
+                                rel="noopener noreferrer">
+                                <figure class="work-card__figure">
+                                    <picture class="work-card__picture work-card__picture--reflected">
+                                        <source type="image/avif" srcset="img/alex.avif">
+                                        <source type="image/webp" srcset="img/alex.webp">
+                                        <img class="work-card__img" width="600" height="600" src="img/alex.png"
+                                            alt="скриншот сайта-портфолио" loading="lazy">
+                                    </picture>
+                                    <figcaption class="work-card__caption">
+                                        <div class="work-card__title  work-card__title--reflected">
+                                            <h3 class="work-card__name">Cайт-портфолио</h3>
+                                        </div>
+                                        <p class="work-card__description  work-card__description--reflected">
+                                            Персональный сайт-портфолио с продуманной структурой. Реализована CSS
+                                            Grid-вёрстка, адаптив под все экраны, анимированное боковое меню и форма
+                                            обратной связи.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="works__item">
+                            <a class="work-card" href="dist_puls/index.html" target="_blank" rel="noopener noreferrer">
+                                <figure class="work-card__figure">
+                                    <picture class="work-card__picture">
+                                        <source type="image/avif" srcset="img/puls.avif">
+                                        <source type="image/webp" srcset="img/puls.webp">
+                                        <img class="work-card__img" width="600" height="600" src="img/puls.png"
+                                            alt="Nebulae" loading="lazy">
+                                    </picture>
+                                    <figcaption class="work-card__caption">
+                                        <div class="work-card__title">
+                                            <h3 class="work-card__name">интернет-магазин</h3>
+                                        </div>
+                                        <p class="work-card__description">
+                                            Лендинг для интернет-магазина пульсометров, насыщенный интерактивными
+                                            элементами на jQuery: модальные окна, валидация, маска ввода в формах.
+                                            Особое внимание уделено каталогу с динамической сменой контента по табам, а
+                                            сама верстка полностью адаптивна под все устройства. Для повышения
+                                            вовлеченности добавлены CSS-анимации.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="works__item">
+                            <a class="work-card" href="dist_uber/index.html" target="_blank" rel="noopener noreferrer">
+                                <figure class="work-card__figure">
+                                    <picture class="work-card__picture work-card__picture--reflected">
+                                        <source type="image/avif" srcset="img/uber.avif">
+                                        <source type="image/webp" srcset="img/uber.webp">
+                                        <img class="work-card__img" width="600" height="600" src="img/uber.png"
+                                            alt="Forma" loading="lazy">
+                                    </picture>
+                                    <figcaption class="work-card__caption">
+                                        <div class="work-card__title work-card__title--reflected">
+                                            <h3 class="work-card__name">Лендинг</h3>
+                                        </div>
+                                        <p class="work-card__description work-card__description--reflected">
+                                            Полностью адаптивный лендинг, разработанный с использованием семантического
+                                            HTML, CSS (Bootstrap Grid) и Vanilla JS. В проекте реализована
+                                            кроссбраузерная верстка, интерактивное мобильное меню (бургер) и поддержка
+                                            экранов любых размеров.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container contact__container">
+                    <h2 class="contact__title">Хотите связаться со мной?</h2>
+                    <p class="contact__cta">
+                        <a class="contact__cta-link" href="mailto:hello@clonify.io"
+                            aria-label="Связаться со мной по почте">Я тут!
+                        </a>
+                    </p>
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <a class="contact__link" href="mailto:hello@clonify.io">
+                                <span class="contact__mail" aria-hidden="true">[ HELLO ] [ @ ] [ CLONIFY.IO ]</span>
+                                <span class="visually-hidden">hello@clonify.io</span>
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="contact__link" target="_blank" rel="noopener noreferrer"
+                                href="https://t.me/username" aria-label="Связаться в Telegram">
+                                <svg class="contact__icon-svg" aria-hidden="true" focusable="false">
+                                    <use href="icons/sprite.svg#tg-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                
+                <div class="footer__content">
+                    <nav class="footer__menu" aria-label="Навигация в подвале">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#about">обо мне</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#works">работы</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#contact">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <small class="footer__copy">
+                        <span aria-hidden="true">[ © ] [ 2026 ]</span>
+                        <span class="visually-hidden">© 2026</span>
+                    </small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
