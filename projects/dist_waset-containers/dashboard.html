@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Тестовое задание</title>
+    <meta name="description" content="Тестовое задание" />
+
+    <!-- Open Graph / Facebook --><!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://тест.ру/" />
+    <meta property="og:title" content="Тестовое задание" />
+    <meta property="og:description" content="Тестовое задание" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://тест.ру/" />
+    <meta property="twitter:title" content="Тестовое задание" />
+    <meta property="twitter:description" content="Тестовое задание" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
+    <!-- Favicon https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="layout">
+
+        <aside class="sidebar" aria-label="Боковая панель">
+            <div class="sidebar__top">
+
+                <div class="sidebar__logo">
+                    <a class="sidebar__logo-link" href="#">Контейнеры</a>
+                </div>
+                <button class="sidebar__burger" type="button" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="sidebar__burger-line"></span>
+                    <span class="sidebar__burger-line"></span>
+                    <span class="sidebar__burger-line"></span>
+                </button>
+            </div>
+            <nav class="sidebar__nav" id="sidebarNav" aria-label="Основная навигация">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="dashboard.html" class="sidebar__link sidebar__link--active" aria-current="page">
+                            <span class="sidebar__icon" aria-hidden="true">📊</span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="platforms.html" class="sidebar__link">
+                            <span class="sidebar__icon" aria-hidden="true">📍</span>
+                            Площадки
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="companies.html" class="sidebar__link">
+                            <span class="sidebar__icon" aria-hidden="true">🏢</span>
+                            Компании
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="buildings.html" class="sidebar__link">
+                            <span class="sidebar__icon" aria-hidden="true">🏠</span>
+                            Дома
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <button class="sidebar__logout" type="button" id="logoutBtn">
+                <span aria-hidden="true">🚪</span> Выйти
+            </button>
+        </aside>
+
+        <main class="dashboard">
+
+            <header class="dashboard__header">
+                <h1 class="dashboard__title">Главная</h1>
+            </header>
+
+            <section class="dashboard__stats">
+                <h2 class="dashboard__stats-title visually-hidden">Статистика</h2>
+                <div class="stat-card">
+                    <div class="stat-card__icon" aria-hidden="true">📍</div>
+                    <dl class="stat-card__data">
+                        <dt class="stat-card__label">Площадок</dt>
+                        <dd class="stat-card__value" id="countPlatforms">0</dd>
+                    </dl>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon" aria-hidden="true">🗑️</div>
+                    <dl class="stat-card__data">
+                        <dt class="stat-card__label">Контейнеров</dt>
+                        <dd class="stat-card__value" id="countContainers">0</dd>
+                    </dl>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon" aria-hidden="true">🏢</div>
+                    <dl class="stat-card__data">
+                        <dt class="stat-card__label">Компаний</dt>
+                        <dd class="stat-card__value" id="countCompanies">0</dd>
+                    </dl>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon" aria-hidden="true">🏠</div>
+                    <dl class="stat-card__data">
+                        <dt class="stat-card__label">Домов</dt>
+                        <dd class="stat-card__value" id="countBuildings">0</dd>
+                    </dl>
+                </div>
+
+
+
+            </section>
+        </main>
+
+    </div>
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
